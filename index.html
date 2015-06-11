@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Audio Streamer</title>
+
+    <link rel="stylesheet" href="style/site.css">
+
+    <script src="js-client/jquery-1.11.1.min.js"></script>
+    <script src="js-client/binary.js"></script>
+    <title>JP Sequenceur</title>
+
+    <script src="js-client/site.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+
+    <audio src="" id="audio"></audio>
+
+    <div id="boutons">
+        <input type="button" name="btn0" onclick="setup(0,myClientName);return false;" value="Bouton 1" class="btn"/>
+        <input type="button" name="btn1" onclick="setup(1,myClientName);return false;" value="Bouton 2" class="btn"/>
+        <input type="button" name="btn2" onclick="setup(2,myClientName);return false;" value="Bouton 3" class="btn"/>
+        <input type="button" name="btn3" onclick="setup(3,myClientName);return false;" value="Bouton 4" class="btn"/>
+        <input type="button" name="btn4" onclick="setup(4,myClientName);return false;" value="Bouton 5" class="btn"/>
+    </div>
+
+
+    <div id="recordingBox">
+        <h1>Audio Streamer <small>realtime to node</small></h1>
+    
+
+        <button class="btn btn-primary" id="start-rec-btn">Start Recording</button>
+        <button class="btn btn-primary" id="stop-rec-btn">Stop Recording</button>
+    
+
+        <div id="canvas-container">
+            <canvas width="800" height="100" id="canvas"></canvas>
+        </div>
+    </div>
+    <p>safdsafd</p>
+    
+</div>
+    <script src="js-client/clientSocket.js"></script>
+
+</body>
+</html>
